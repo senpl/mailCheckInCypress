@@ -1,0 +1,19 @@
+{
+  "name": "mailCheckInCypress",
+  "private": true,
+  "scripts": {
+    "lint": "tsc --noEmit",
+    "cypress:run": "npx cypress run --spec cypress/e2e",
+    "cypress:open": "npx cypress open",
+    "test": "npx cypress open"
+ },
+  "devDependencies": {
+    "@types/node": "^20.12.12"
+  },
+  "dependencies": {
+    "cypress": "13.9.0",
+    "imap-emails": "^1.0.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}

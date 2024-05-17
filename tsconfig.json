@@ -1,0 +1,31 @@
+{
+  // "ts-node": {
+  //   "files": true
+  // },
+  "compilerOptions": {
+    "baseUrl": "support",
+    // "declaration": true,
+    "esModuleInterop": true,
+    "module": "nodenext",
+    "outDir": "./build",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "types" :  ["cypress", "node"]
+    //, "cypress-real-events"]
+  },
+  // "include": [
+  //   "node_modules/cypress",
+  //   "cypress/**/*.ts",
+  //   "cypress/**/*d.ts",
+  //   "augmentations.d.ts",
+  //   "browserify.ts",
+  //   "declarations.d.ts",
+  //   "methods.ts"
+  // ],
+  // "exclude": [
+  //   "node_modules"
+  // ],
+  "paths": {
+    // "@badeball/cypress-cucumber-preprocessor/*": ["./node_modules/@badeball/cypress-cucumber-preprocessor/dist/bundler-utils/*"]
+  }
+}
