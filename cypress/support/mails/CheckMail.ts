@@ -17,6 +17,7 @@ export async function getLinkFromMail(currentDate) {
   emails = emails.filter(email => new Date(email.date) > new Date(currentDate))
 
   if (emails.length == 0) {
+    await imapEmails.disconnect()
     return 'not mail yet'
   } else {
     console.log(emails[emails.length - 1].date.toISOString())
